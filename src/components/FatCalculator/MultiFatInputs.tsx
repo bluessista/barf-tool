@@ -25,7 +25,7 @@ export const MultiFatInputs = ({
 }: Props) => {
   return (
     <Grid2 container spacing={2}>
-      <Grid2 md={6}>
+      <Grid2 xs={6}>
         <Typography variant="body1">Fett in MF in %</Typography>
         <TextField
           type="text"
@@ -33,7 +33,7 @@ export const MultiFatInputs = ({
           id="muscle"
           value={meatOne}
           onChange={handleMeatOneChange}
-          label="Fleisch 1"
+          label="Fleisch A"
           variant="standard"
           sx={{ mr: 2, my: 2, width: '200px' }}
         />
@@ -43,12 +43,12 @@ export const MultiFatInputs = ({
           id="fatInMuscle"
           value={meatTwo}
           onChange={handleMeatTwoChange}
-          label="Fleisch 2"
+          label="Fleisch B"
           variant="standard"
           sx={{ mr: 2, width: '200px' }}
         />
       </Grid2>
-      <Grid2 md={6}>
+      <Grid2 xs={6}>
         <Typography variant="body1">Mischung %</Typography>
         <TextField
           type="text"
@@ -56,17 +56,17 @@ export const MultiFatInputs = ({
           id="meatOneRatio"
           value={meatOneRatio}
           onChange={handleMeatOneRatioChange}
-          label="Anteil Fleisch 1"
+          label="Fleisch A - Anteil"
           variant="standard"
           sx={{ mr: 2, my: 2, width: '180px' }}
         />
         <TextField
           type="text"
-          name="fatInMuscle"
-          id="fatInMuscle"
+          name="meatTwoRatio"
+          id="meatTwoRatio"
           value={meatTwoRatio}
           disabled
-          label="Anteil Fleisch 2"
+          label="Fleisch B - Anteil"
           variant="standard"
           sx={{ mr: 2, width: '180px' }}
         />

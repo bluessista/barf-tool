@@ -30,18 +30,18 @@ export const FatCalculator = ({
         id="muscle"
         value={muscleValue}
         onChange={handleMuscleValueChange}
-        label="Menge des Muskelfleisches pro Tag"
+        label="Muskelfleisch-Bedarf pro Tag"
         variant="standard"
         sx={{ mr: 2, width: '400px' }}
       />
       <Divider sx={{ my: 2 }} />
       <TextField
         type="text"
-        name="fatInMuscle"
-        id="fatInMuscle"
+        name="neededValue"
+        id="neededValue"
         value={neededFatValue}
         onChange={handleNeededFatValueChange}
-        label="Bedarf im Muskelfleisch in %"
+        label="Fettgehalt in %"
         variant="standard"
         sx={{ mr: 2, width: '400px' }}
       />
@@ -52,7 +52,7 @@ export const FatCalculator = ({
         id="fatInMuscle"
         value={fatInmuscleValue}
         onChange={handleFatInMuscleValueChange}
-        label="Anteil Fett im Muskelfleisch in %"
+        label="Fettanteil im Fleisch in %"
         variant="standard"
         sx={{ mr: 2, width: '400px' }}
       />

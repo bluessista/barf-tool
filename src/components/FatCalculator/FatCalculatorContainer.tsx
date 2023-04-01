@@ -79,7 +79,7 @@ export const FatCalculatorContainer = () => {
           Fettrechner
         </Typography>
       </Grid2>
-      <Grid2 md={4}>
+      <Grid2 md={6} sm={8} xs={12}>
         <Card sx={{ mt: 3, p: 3 }} elevation={1}>
           <FatCalculator
             muscleValue={muscleValue}
@@ -97,8 +97,8 @@ export const FatCalculatorContainer = () => {
           />
         </Card>
       </Grid2>
-      <Grid2 md={8}>
-        <Typography variant="body1" sx={{ mt: 3, pt: 11, pb: 1 }}>
+      <Grid2 md={6} sm={4} xs={12}>
+        <Typography variant="body1" sx={{ mt: 3 }}>
           Fett pro Tag ergänzen:
           {` ${Math.round(calculatedFat)} Gramm`}
         </Typography>
@@ -106,12 +106,12 @@ export const FatCalculatorContainer = () => {
           Muskelfleischmenge neu:
           {` ${Math.round(muscleValue - calculatedFat)} Gramm`}
         </Typography>
-        <Typography variant="body1" sx={{ mt: 3, pb: 3, pt: 1 }}>
+        <Typography variant="body1" sx={{ mt: 3 }}>
           Gesamtmuskelfleisch inkl. Fett: {` ${muscleValue} Gramm`}
         </Typography>
       </Grid2>
       <Divider sx={{ my: 2 }} />
-      <Grid2 md={4}>
+      <Grid2 md={6} sm={8} xs={12}>
         <Card sx={{ mt: 3, p: 3 }} elevation={1}>
           <MultiFatInputs
             meatOne={meatOne}
@@ -130,8 +130,8 @@ export const FatCalculatorContainer = () => {
           />
         </Card>
       </Grid2>
-      <Grid2 md={8}>
-        <Typography variant="body1" sx={{ mt: 3, pt: 11, pb: 1 }}>
+      <Grid2 md={6} sm={4} xs={12}>
+        <Typography variant="body1" sx={{ my: 1, p: 1 }}>
           Fettanteil in dieser Mischung in %:
           {` ${Math.round(
             (meatOne * meatOneRatio + meatTwo * meatTwoRatio) / 100
